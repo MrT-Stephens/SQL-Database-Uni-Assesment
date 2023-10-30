@@ -27,6 +27,30 @@ The SQL script will:
 
 ## Tables Created
 
+For the database, ten tables were created, and they can be viewed in the SQL script code.
 
+The table names are:
+  1. Customer
+  2. BillingInfomation
+  3. CustomerOrder
+  4. MenuItem
+  5. OrderedMenuItem
+  6. Supplier
+  7. Ingredient
+  8. MenuItemIngredient
+  9. Review
+  10. MenuItemReview
 
 ## Queries
+
+  A. List the customer's id and full name with there order IDs, dates of orders, and total cost of orders.
+  ```SQL
+CREATE TABLE    Question_D_A_Query AS
+SELECT          Cust.CustomerId AS "Customer ID", 
+                (Cust.FirstName || ' ' || Cust.LastName) AS "Customer Name", 
+                Ord.OrderNo AS "Order No", 
+                TO_CHAR(Ord.DateOfOrder, 'DD-MM-YYYY HH24:MI:SS') AS "Date Order Taken", 
+                Ord.TotalCost AS "Total Cost"
+FROM            Customer Cust
+RIGHT JOIN      CustomerOrder Ord ON Cust.CustomerId = Ord.CustomerId;
+  ```

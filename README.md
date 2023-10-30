@@ -43,7 +43,9 @@ The table names are:
 
 ## Queries
 
-  A. List the customer's id and full name with there order IDs, dates of orders, and total cost of orders.
+The various queries completed on the database are listed below.
+
+  A. List the customer's ID and full name with their order IDs, dates of orders, and total cost of orders.
   ```SQL
 CREATE TABLE    Question_D_A_Query AS
 SELECT          Cust.CustomerId AS "Customer ID", 

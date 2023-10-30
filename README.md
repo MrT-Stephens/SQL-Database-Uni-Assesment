@@ -13,10 +13,6 @@
   <a href="#queries">Queries</a>
 </p>
 
-<p align="center">
-  <img src="https://github.com/MrT-Stephens/CPP-INI-Config-File-library/blob/main/Images/INI-File.png" alt="screenshot">
-</p>
-
 ## Infomation
 
 ## Tables Created
